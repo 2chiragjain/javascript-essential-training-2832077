@@ -21,4 +21,8 @@ const backpack = {
   },
 };
 
-console.log("The backpack object:", backpack);
+console.log("The backpack object:", backpack["pocketNum"]);
+
+for (var backs in backpack) {
+  console.log(backs, " ", backpack[backs]);
+}

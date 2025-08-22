@@ -13,7 +13,7 @@ const everydayPack = new Backpack(
   15,
   26,
   26,
-  false,
+  true,
   "December 5, 2018 15:00:00 PST",
   "../assets/images/everyday.svg"
 );
@@ -40,9 +40,9 @@ const content = `
     <li class="feature backpack__strap">Right strap length:<span> ${
       everydayPack.strapLength.right
     } inches</span></li>
-    <li class="feature backpack__lid">Lid status:<span> ${
-      everydayPack.lidOpen
-    }</span></li>
+    <li class="feature backpack__lid">Lid status:<span> ${`${
+      everydayPack.lidOpen ? "Open" : "Closed"
+    }`}</span></li>
   </ul>
 `;
 

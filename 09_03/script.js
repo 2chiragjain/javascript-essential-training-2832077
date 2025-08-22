@@ -47,3 +47,6 @@ const main = document.querySelector(".maincontent");
 backpackList.forEach((backpack) => {
   main.append(backpack);
 });
+
+const btnToggle = document.querySelectorAll(".lid-toggle");
+console.log(btnToggle);

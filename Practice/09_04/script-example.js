@@ -13,7 +13,7 @@ gridContainer.addEventListener("mouseenter", () => {
 });
 
 gridContainer.addEventListener("mouseleave", () => {
-  gridContainer.style.outline = "";
+  gridContainer.style.outline = "6px solid blue";
 });
 
 /**
@@ -32,7 +32,7 @@ gridCells.forEach((cell) => {
   // Set outline when cell is hovered
   cell.addEventListener("mouseenter", (e) => {
     console.log(e);
-    cell.style.outline = "2px solid red";
+    cell.style.outline = `2px solid #${randColor()}`;
   });
 
   // Remove outline when cell is exited

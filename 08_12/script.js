@@ -55,8 +55,12 @@ newArticle.innerHTML = content;
 
 main.append(newArticle);
 
-if (everydayPack.backpackAge() >= 30) {
-  console.log("Backpack is used")
+if (everydayPack.backpackAge() >= 30000) {
+  console.log("Backpack is used");
 } else {
-  console.log("Backpack is new")
+  console.log("Backpack is new");
 }
+
+console.log(
+  everydayPack.backpackAge() >= 30 ? "Backpack is used" : "Backpack is new"
+);

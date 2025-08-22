@@ -23,3 +23,7 @@ const backpack = {
 
 console.log("The backpack object:", backpack);
 console.log("The pocketNum value:", backpack.pocketNum);
+
+for (var c in backpack) {
+  console.log(c, " ", c.valueOf());
+}
